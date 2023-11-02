@@ -1,0 +1,272 @@
+.index * {
+    box-sizing: border-box;
+}
+
+.index {
+    background: #ffffff;
+    width: 1440px;
+    height: 1024px;
+    position: relative;
+    overflow: hidden;
+}
+
+.bottom-frame {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    left: 0px;
+    top: 867px;
+}
+
+.bottom-container {
+    background: #051726;
+    flex-shrink: 0;
+    width: 1440px;
+    height: 157px;
+    position: relative;
+}
+
+.bottom-logo {
+    flex-shrink: 0;
+    width: 168px;
+    height: 62px;
+    position: absolute;
+    left: 505px;
+    top: 48px;
+}
+
+.divider {
+    border-style: solid;
+    border-color: #000000;
+    border-width: 1px 0 0 0;
+    flex-shrink: 0;
+    width: 114px;
+    height: 0px;
+    position: absolute;
+    left: 720px;
+    top: 25px;
+    transform-origin: 0 0;
+    transform: rotate(90deg) scale(1, 1);
+}
+
+.g-rkan-k-z-k-linked-in {
+    color: #ffffff;
+    text-align: left;
+    font: 400 12px 'Inter', sans-serif;
+    text-decoration: underline;
+    position: absolute;
+    left: 762px;
+    top: 107px;
+    width: 262px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start
+}
+
+.h-seyin-ard-l-karasungur-linked-in {
+    color: #ffffff;
+    text-align: left;
+    font: 400 12px 'Inter', sans-serif;
+    text-decoration: underline;
+    position: absolute;
+    left: 762px;
+    top: 76px;
+    width: 262px;
+    height: 31px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start
+}
+
+.kemal-an-l-g-ven-linked-in {
+    color: #ffffff;
+    text-align: left;
+    font: 400 12px 'Inter', sans-serif;
+    text-decoration: underline;
+    position: absolute;
+    left: 762px;
+    top: 48px;
+    width: 262px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start
+}
+
+.unet-github-com {
+    color: #ffffff;
+    text-align: left;
+    font: 400 12px 'Inter', sans-serif;
+    text-decoration: underline;
+    position: absolute;
+    left: 762px;
+    top: 22px;
+    width: 262px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start
+}
+
+.third-body-frame {
+    background: #e9c0e9;
+    padding: 33px 576px 33px 576px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 1440px;
+    height: 242px;
+    position: absolute;
+    left: 0px;
+    top: 625px;
+    overflow: hidden;
+}
+
+.got-questions {
+    color: #502274;
+    text-align: center;
+    font: 700 32px 'Inter', sans-serif;
+    position: absolute;
+    left: 598px;
+    top: 40px;
+}
+
+.second-body-frame {
+    background: #c3ddf8;
+    padding: 66px 132px 66px 132px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 1440px;
+    height: 281px;
+    position: absolute;
+    left: 0px;
+    top: 344px;
+    overflow: hidden;
+}
+
+.personalize-your-profile-introduce-yourself-to-your-professional-network {
+    color: #061492;
+    text-align: center;
+    font: 700 20px 'Inter', sans-serif;
+    position: absolute;
+    left: 100px;
+    top: 97px;
+    width: 386px;
+}
+
+.first-body-frame {
+    background: #d2e823;
+    padding: 86px 207px 86px 207px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 1440px;
+    position: absolute;
+    left: 0px;
+    top: 124px;
+    overflow: hidden;
+}
+
+.all-your-professional-links-on-one-platform {
+    color: #254f1a;
+    text-align: center;
+    font: 700 20px 'Inter', sans-serif;
+    position: absolute;
+    left: 970px;
+    top: 91px;
+    width: 293px;
+}
+
+.header-frame {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    left: 0px;
+    top: -3px;
+}
+
+.header-container {
+    background: #051726;
+    flex-shrink: 0;
+    width: 1440px;
+    height: 127px;
+    position: relative;
+}
+
+.sign-up {
+    flex-shrink: 0;
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    left: 1104px;
+    top: 48px;
+}
+
+.rectangle {
+    background: #81ffd9;
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    top: 0px;
+}
+
+.sign-up2 {
+    color: #000000;
+    text-align: center;
+    font: 400 12px 'Inter', sans-serif;
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.login {
+    flex-shrink: 0;
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    left: 990px;
+    top: 48px;
+}
+
+.login2 {
+    color: #000000;
+    text-align: center;
+    font: 400 12px 'Inter', sans-serif;
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.header-logo {
+    flex-shrink: 0;
+    width: 264px;
+    height: 96px;
+    position: absolute;
+    left: 132px;
+    top: 15px;
+}
