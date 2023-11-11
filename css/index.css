@@ -8,17 +8,32 @@ html {
     overflow-y: scroll;
 }
 
-h1,
+h1 {
+    text-align: center;
+    font: 700 48px;
+    width: auto;
+    justify-content: center;
+}
+
 h2 {
     text-align: center;
-    font: 700 32px;
-    width: 312;
+    font: 700 36px;
+    justify-content: center;
+}
+
+h3 {
+    font: 700 30px;
+    justify-content: center;
+}
+
+p {
+    font: 22px;
     justify-content: center;
 }
 
 a {
     color: #ffffff;
-    font: 400 12px 'Inter', sans-serif;
+    font: 400 16px 'Inter', sans-serif;
     display: flex;
     text-align: left;
     align-items: center;
@@ -28,6 +43,7 @@ a {
 
 img {
     max-width: 100%;
+    width: max-content;
 }
 
 body {
@@ -52,7 +68,7 @@ div {
 }
 
 .header-container {
-    padding: 0 40px;
+    padding: 0 48px;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -61,13 +77,13 @@ div {
     justify-content: space-between;
     width: 100%;
     flex-direction: row;
-    height: 5%;
+    height: 4%;
     background: #051726;
     z-index: 1;
 }
 
 .first-body {
-    height: 35%;
+    height: 30%;
     background: #d2e823;
 }
 
@@ -84,7 +100,7 @@ div {
 }
 
 .bottom-container {
-    height: 10%;
+    height: 6%;
     background: #051726;
 }
 
@@ -102,17 +118,25 @@ div {
 }
 
 ul {
-    padding: 48px;
+    padding: auto;
     list-style-type: none;
 }
 
 ul li {
-    padding: 28px;
-    padding-right: 256px;
+    padding: 16;
+    width: 728px;
     background: #9f7bb9;
     color: #502274;
-    margin: 20px;
+    margin-bottom: 20px;
     border-radius: 12px;
+}
+
+.hide {
+    display: none !important
+}
+
+.show {
+    display: block !important;
 }
 
 .button-container {
@@ -123,9 +147,10 @@ ul li {
 
 a.button:link,
 a.button:visited {
+    border-radius: 8px;
     background-color: #81FFD9;
     color: black;
-    margin-right: 3%;
+    margin: 5%;
     padding: 14px 25px;
     text-align: center;
     text-decoration: none;
@@ -149,6 +174,7 @@ div.logo-container {
 .brand-image {
     width: 270;
     height: 480;
+    margin: 32px;
 }
 
 .bottom-logo {

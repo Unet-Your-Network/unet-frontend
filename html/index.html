@@ -5,6 +5,7 @@
     <link rel="icon" href="../img/unet-favicon.png">
     <link rel="stylesheet" href="../css/index.css">
     <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet'>
+    <script src="../js/accordion.js"></script>
 </head>
 
 <body>
@@ -26,41 +27,80 @@
             <img class="brand-image" src="../img/unet-logo.png">
         </div>
         <div>
-            <h2 class="first-body-header">
+            <h1 class="first-body-header">
                 All your professional links on one platform <br> <br>
                 Easily share your business links with your colleagues at unet
-            </h2>
+            </h1>
         </div>
     </div>
     <div class="second-body frame">
-        <h2 class="second-body-header">
-            Personalize your profile. Introduce yourself to your professional network.<br> <br>
-            You can easily edit your Unet profile in the way that suits you best.
-        </h2>
+        <h1 class="second-body-header">
+            Personalize your profile<br> <br>
+            Introduce yourself to your professional network<br> <br>
+            You can easily edit your Unet profile in the way that suits you best
+        </h1>
         <div>
             <img class="brand-image" src="../img/unet-logo.png">
         </div>
     </div>
     <div class="third-body frame">
-        <h1 class="third-body-header">
+        <h2 class="third-body-header">
             Got Questions?
-        </h1>
+        </h2>
         <div>
-            <ul>
-                <li>
-                    Is Unet save?
+            <ul class="faq">
+                <li onclick="accordion('answer1')">
+                    <h3 class="title">
+                        Is Unet safe?
+                    </h3>
+                    <div id="answer1" class="hide">
+                        <p>
+                            Unet uses encryption method to secure your data.
+                        </p>
+                    </div>
                 </li>
-                <li>
-                    How can I register on Unet?
+                <li onclick="accordion('answer2')">
+                    <h3>
+                        How can I register on Unet?
+                    </h3>
+                    <div id="answer2" class="hide">
+                        <p>
+                            You can easily sign up with your username, e-mail, and password from the "Sign Up" button
+                            above.
+                        </p>
+                    </div>
                 </li>
-                <li>
-                    How many links can I add on Unet?
+                <li onclick="accordion('answer3')">
+                    <h3>
+                        How many links can I add on Unet?
+                    </h3>
+                    <div id="answer3" class="hide">
+                        <p>
+                            The number of links you can add is currently 4 links, but it will increase in future
+                            versions.
+                        </p>
+                    </div>
                 </li>
-                <li>
-                    How can I share my unet profile?
+                <li onclick="accordion('answer4')">
+                    <h3>
+                        How can I share my unet profile?
+                    </h3>
+                    <div id="answer4" class="hide">
+                        <p>
+                            You can easily share your account with anyone you want by sharing the URL of your account
+                            page.
+                        </p>
+                    </div>
                 </li>
-                <li>
-                    Is there a fee to use unet?
+                <li onclick="accordion('answer5')">
+                    <h3>
+                        Is there a fee to use unet?
+                    </h3>
+                    <div id="answer5" class="hide">
+                        <p>
+                            Using Unet is completely free.
+                        </p>
+                    </div>
                 </li>
             </ul>
         </div>
