@@ -51,7 +51,7 @@ body {
 }
 
 h2 {
-  color: #007BFF;
+  color: #051726;
   margin-bottom: 20px;
 }
 
@@ -72,6 +72,7 @@ input {
   margin-bottom: 10px;
   border: 1px solid #ddd;
   border-radius: 5px;
+  font-family: 'Righteous';
 }
 
 button {
@@ -91,6 +92,11 @@ button {
 }
 
 .switch a {
-  color: #007BFF;
+  color: #051726;
   text-decoration: none;
+}
+
+a:hover,
+a:active {
+    color: #81FFD9;
 }
