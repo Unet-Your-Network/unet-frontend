@@ -46,12 +46,12 @@ body {
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
-  /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  -Burada hafif gölge yapıyor, şimdilik kaldırdım*/ 
+  /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  -Burada hafif gölge yapıyor, şimdilik kaldırdım*/
   text-align: center;
 }
 
 h2 {
-  color: #007BFF;
+  color: #051726;
   margin-bottom: 20px;
 }
 
@@ -72,6 +72,7 @@ input {
   margin-bottom: 10px;
   border: 1px solid #ddd;
   border-radius: 5px;
+  font-family: 'Righteous';
 }
 
 button {
@@ -91,6 +92,11 @@ button {
 }
 
 .switch a {
-  color: #007BFF;
+  color: #051726;
   text-decoration: none;
+}
+
+a:hover,
+a:active {
+    color: #81FFD9;
 }
