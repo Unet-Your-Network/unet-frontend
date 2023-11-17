@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Righteous';
+}
+
+h2 {
+    background: #407e6c;
+    border-radius: 6px;
+    padding: 16px;
+    text-align: center;
+    font: 700 36px;
+    justify-content: center;
+}
+
+p {
+    background: #407e6c;
+    border-radius: 6px;
+    padding: 16px;
+    font: 22px;
+    justify-content: center;
+}
+
+a {
+    color: #ffffff;
+    font: 400 16px 'Inter', sans-serif;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    font-weight: 256px;
+    margin-top: 5%;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    color: #81FFD9;
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    width: max-content;
+}
+
+body {
+    background: #051726;
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    padding: auto;
+    list-style-type: none;
+}
+
+ul li {
+    padding: 16px;
+    background: #407e6c;
+    margin-top: 20px;
+    border-radius: 12px;
+}
+
+.header {
+    padding: 32 64px;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container {
+    display: flex;
+    background: #81FFD9;
+    justify-content: center;
+    align-items: start;
+    padding: 24px;
+    margin: 32 64px;
+    border-radius: 6px;
+}
+
+.logo-container {
+    align-items: center;
+}
+
+.logo {
+    width: 264px;
+    height: 96px;
+}
+
+.avatar {
+    width: 156px;
+    height: 156px;
+    border-radius: 156px;
+    background: #407e6c;
+}
+
+.info {
+    flex-direction: row;
+}
+
+.info-container {
+    padding: 16px;
+    flex-direction: column;
+}
