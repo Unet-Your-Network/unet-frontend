@@ -5,12 +5,13 @@
   <link rel="icon" href="../img/unet-favicon.png">
   <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet'>
   <link rel="stylesheet" type="text/css" href="../css/register.css" />
+  <script src="../js/router.js"></script>
 </head>
 
 <body>
   <div class="split left">
     <div class="centered">
-      <a href="index.html"><img style= "width: 100%" ; src="../img/logo-no-background.png" alt="logo"></a>
+      <a href="index.html"><img style="width: 100%" ; src="../img/logo-no-background.png" alt="logo"></a>
       <p style="color:white" ;>Your Network</p>
     </div>
   </div>
@@ -28,7 +29,7 @@
         <label for="new-password">New Password</label>
         <input type="password" id="new-password" placeholder="Enter your new password">
 
-        <button type="submit">Register</button>
+        <button type="button" onclick="toProfile()">Register</button>
       </form>
       <div class="switch">Already have an account? <a href=logIn.html>Login here</a></div>
     </div>

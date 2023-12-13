@@ -107,3 +107,31 @@ ul li {
     padding: 16px;
     flex-direction: column;
 }
+
+button {
+    border-radius: 8px;
+    background-color: #81FFD9;
+    color: black;
+    margin: 5%;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+button:link,
+button:visited {
+    border-radius: 8px;
+    background-color: #81FFD9;
+    color: black;
+    margin: 5%;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+button:hover,
+button:active {
+    background-color: #3fc19a;
+}
