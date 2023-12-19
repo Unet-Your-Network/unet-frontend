@@ -62,6 +62,7 @@ input[type="email"] {
 }
 
 button {
+    
     background-color: #051726;
     color: #ffffff;
     border: none;
@@ -75,3 +76,34 @@ button:hover {
     background-color: #051726;
     color: #81ffd9;
 }
+#theme{
+   border-style: solid;
+    border-width: 2px;
+    
+}
+
+#emailcontact{
+   border-style: solid;
+    border-width: 2px;
+    padding:5px;
+}
+#socialmedia{
+   border-style: solid;
+    border-width: 2px;
+    padding:5px;
+}
+
+#passwordreset{
+ display: flex;
+  flex-direction:row;
+ align-items:center;
+}
+.dropdown-content {
+      display: none;
+    }
+
+      .container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }

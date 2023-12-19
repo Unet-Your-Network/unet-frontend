@@ -1,10 +1,10 @@
 <html>
 
 <head>
+ 
     <title>Unet | Settings</title>
     <link rel="icon" href="../img/unet-favicon.png">
     <link rel="stylesheet" type="text/css" href="../css/settings.css">
-    <script src="../js/router.js"></script>
 </head>
 
 <body>
@@ -16,101 +16,37 @@
     </div>
     <div class="settings-container">
         <form id="settings-form">
-            <h2>Hesap Ayarları:</h2>
-            <label for="username">Kullanıcı Adı Değişikliği:</label>
-            <input type="text" id="username" placeholder="Mevcut kullanıcı adınızı girin">
+            <h2>Account Settings:</h2>
+            <label for="username">Username Change:</label>
+            <input type="text" id="username" placeholder="Enter your new username ">
+<button onclick="changeUsername()">Change Username</button>
+            <label for="password">Password Change:</label>
+            <input type="password" id="password" placeholder="Enter your new password">
+          <button onclick="changePassword()">Change Password</button>
 
-            <label for="password">Şifre Değişikliği:</label>
-            <input type="password" id="password" placeholder="Mevcut şifrenizi girin">
+<label for="profile-pic">Upload Profile Photo:</label>
+<input type="file" id="profile-pic" onchange="previewImage(event)">
+<img id="preview" src="#" alt="Preview" style="display: none;">
+            
+        <label for="contact-info">Contact Information Update:</label>
+    <label for="email">Email Address:</label>
+<input type="email" id="email" placeholder="Enter your email address">
+          <button onclick="updateEmail()">Update Email</button>
 
-            <label for="profile-pic">Profil Fotoğrafı Yükleme:</label>
-            <input type="file" id="profile-pic">
+       
+ <div id="socialmedia"> <h2>Social Media Links:</h2> <div class="container"> <label for="github">Your Github Link:</label> <input type="text" id="github" placeholder="Enter your Github link"> 
+   </div> <div class="container"> <label for="linkedin">Your LinkedIn Link:</label> <input type="text" id="linkedin" placeholder="Enter your LinkedIn link">
+   </div> <div class="container"> <label for="instagram">Your Instagram Link:</label> <input type="text" id="instagram" placeholder="Enter your Instagram link"> 
+   </div> <div class="container"> <label for="twitter">Your Twitter Link:</label> <input type="text" id="twitter" placeholder="Enter your Twitter link"> </div> </div>
+<div id="passwordreset">
+            
+            <label for="password-reset">Password Reset</label>
+  <input type="checkbox">
+          </div>
 
-            <label for="contact-info">İletişim Bilgileri Güncelleme:</label>
-            <input type="text" id="contact-info" placeholder="E-posta adresi veya telefon numarası">
-
-            <label for="email-notif">E-posta Bildirimleri:</label>
-            <input type="checkbox" id="email-notif">
-
-
-            <label for="notif-tone">Bildirim Tonları ve Titreşim Ayarları:</label>
-            <input type="checkbox" id="notif-tone">
-
-            <h2>Gizlilik ve Güvenlik Ayarları:</h2>
-            <label for="data-sharing">Veri Paylaşımı ve İzinler:</label>
-            <input type="checkbox" id="data-sharing">
-
-            <label for="privacy-levels">Gizlilik Seviyeleri:</label>
-            <select id="privacy-levels">
-                <option value="low">Düşük</option>
-                <option value="medium">Orta</option>
-                <option value="high">Yüksek</option>
-            </select>
-
-            <label for="cookie-settings">Tarayıcı Çerezleri ve Çevrimiçi Takip Ayarları:</label>
-            <input type="checkbox" id="cookie-settings">
-
-            <h2>Tema ve Görünüm Ayarları:</h2>
-            <label for="theme-mode">Koyu Mod veya Açık Mod Seçenekleri:</label>
-            <select id="theme-mode">
-                <option value="dark">Koyu Mod</option>
-                <option value="light">Açık Mod</option>
-            </select>
-
-            <label for="theme-colors">Tema Renkleri ve Arka Plan Seçenekleri:</label>
-            <input type="color" id="theme-colors">
-
-            <label for="font-style">Yazı Tipi Boyutu ve Stil Seçenekleri:</label>
-            <input type="text" id="font-style">
-
-            <h2>Bildirimler ve Abonelikler:</h2>
-            <label for="newsletter-subscription">E-posta Bültenlerine Abonelik Yönetimi:</label>
-            <input type="checkbox" id="newsletter-subscription">
-
-            <label for="site-notifications">Site İçi Bildirimler ve Abonelikler:</label>
-            <input type="checkbox" id="site-notifications">
-
-            <h2>E-posta ve İletişim Ayarları:</h2>
-            <label for="email-address">E-posta Adresi:</label>
-            <input type="email" id="email-address" placeholder="E-posta adresinizi girin">
-
-            <label for="email-customization">E-posta Bildirimleri için Özelleştirme Seçenekleri:</label>
-            <input type="text" id="email-customization" placeholder="Özelleştirme seçenekleri">
-
-            <h2>Sosyal Medya Bağlantıları:</h2>
-            <label for="social-media-profiles">Sosyal Medya Profilleri ve Bağlantılar:</label>
-            <input type="text" id="social-media-profiles" placeholder="Sosyal medya profillerinizi girin">
-
-            <label for="sign-in-options">Oturum Açma Seçenekleri:</label>
-            <input type="checkbox" id="google-sign-in">
-            <label for="google-sign-in">Google ile Oturum Aç</label>
-
-            <input type="checkbox" id="facebook-sign-in">
-            <label for="facebook-sign-in">Facebook ile Oturum Aç</label>
-
-            <input type="checkbox" id="twitter-sign-in">
-            <label for="twitter-sign-in">Twitter ile Oturum Aç</label>
-
-            <h2>Oturum Açma ve Kimlik Doğrulama:</h2>
-            <label for="sign-in-methods">Oturum Açma Yöntemleri ve Şifre Sıfırlama Seçenekleri:</label>
-            <input type="checkbox" id="password-reset">
-            <label for="password-reset">Şifre Sıfırlama</label>
-
-            <label for="two-factor-auth-settings">İki Faktörlü Kimlik Doğrulama Ayarları:</label>
-            <input type="checkbox" id="two-factor-auth-settings">
-
-            <h2>Veri ve Hesap Silme:</h2>
-            <label for="delete-account">Hesap Silme ve Veri Temizleme Seçenekleri:</label>
-            <input type="checkbox" id="delete-account">
-
-            <label for="account-history">Hesap Geçmişi ve Etkinlik Kayıtları:</label>
-            <input type="checkbox" id="account-history">
-
-            <button type="button" onclick="toIndex()">Log out</button>
-
-            <button type="submit">Ayarları Kaydet</button>
+            <button type="submit">Save Settings</button>
         </form>
     </div>
 </body>
 
-</html>
+</html> 
